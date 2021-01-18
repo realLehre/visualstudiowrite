@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
 }
 
 html {
@@ -44,6 +43,7 @@ p a:hover {
 
 body {
   font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 /* header */
