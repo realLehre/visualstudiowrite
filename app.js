@@ -58,11 +58,3 @@ sr.reveal('.animate-left', {
     distance: '250px',
     delay: 200
 });
-
-sr.reveal('.animate-bottom', {
-    origin: 'bottom',
-    duration: 1000,
-    distance: '200px',
-    delay: 200
-});
-
