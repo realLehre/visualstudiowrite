@@ -187,6 +187,10 @@
   .clear {
     height: 40px;
   }
+  
+  .alert-container {
+    display: block;
+  }
 
   .offers {
     display: grid;
