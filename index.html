@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" href="./img/favicorn.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <title>VS Write - A VS Code landing page clone</title>
+  </head>
+  <body class="body">
+    <!-- header -->
+    <section class="main-header">
+      <div class="header-container">
+        <div class="header">
+          <div class="header-left">
+            <div class="logo-container">
+              <a href="#"><img src="./img/logo.png" alt="" /></a>
+            </div>
+
+            <div class="hamburger-menu">
+              <i class="fa fa-bars"></i>
+            </div>
+
+            <ul class="nav-list">
+              <li class="nav-link"><a href="#">Docs</a></li>
+              <li class="nav-link"><a href="#">Updates</a></li>
+              <li class="nav-link"><a href="#">Blog</a></li>
+              <li class="nav-link"><a href="#">API</a></li>
+              <li class="nav-link"><a href="#">Extensions</a></li>
+              <li class="nav-link"><a href="#">FAQ</a></li>
+              <li class="nav-link"><a href="#">Learn</a></li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <div class="search-docs">
+              <div class="search-icon">
+                <a href="#"><img src="./img/search.svg" alt="" /> </a>
+              </div>
+              <input type="text" placeholder="Search Docs" />
+            </div>
+            <div class="downld-btn">
+              <a href=""
+                ><img src="./img/download.svg" alt="" /><span
+                  class="downld-text"
+                >
+                  Download</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- clear-div -->
+    <div class="clear"></div>
+    <!-- alert -->
+    <section class="alert-container">
+      <p class="alert">
+        <a href="#" class="alert-content">Version 1.52 </a>is now available!
+        Read about the features and fixes from November.
+      </p>
+    </section>
+
+    <!-- showcase -->
+    <div class="showcase">
+      <div class="showcase-content">
+        <div class="showcase-texts">
+          <h3>Code editing.</h3>
+          <h3 id="bold">Redefined.</h3>
+          <p id="remark">Free. Built on open source. Runs everywhere.</p>
+          <a href="">
+            <div class="showcase-btn">
+              <div class="show-btn btn-1">
+                <div class="top">
+                  <img src="./img/download.svg" alt="" />
+                  <p>.deb</p>
+                </div>
+                <div class="bottom">
+                  <p>Debian, Ubuntu...</p>
+                </div>
+              </div>
+              <div class="show-btn btn-2">
+                <div class="top">
+                  <img src="./img/download.svg" alt="" />
+                  <p>.rpm</p>
+                </div>
+                <div class="bottom">
+                  <p>Red Hat, Fedora...</p>
+                </div>
+              </div>
+              <div class="show-btn btn-3">
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- download table -->
+
+          <div class="download-table">
+            <table class="download-table-content">
+              <tr>
+                <td class="no-border"></td>
+                <td class="no-border"></td>
+                <td class="no-border">Stable</td>
+                <td class="gray no-border">Insiders</td>
+              </tr>
+
+              <tr>
+                <th>macOS</th>
+                <td>Package</td>
+                <td>
+                  <a href=""><img src="./img/download_blue.svg" alt="" /></a>
+                </td>
+                <td class="gray">
+                  <a href=""><img src="./img/download_dark.svg" alt="" /></a>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Windows x64</th>
+                <td>User Installer</td>
+                <td>
+                  <a href=""><img src="./img/download_blue.svg" alt="" /></a>
+                </td>
+                <td class="gray">
+                  <a href=""><img src="./img/download_dark.svg" alt="" /></a>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Linux x64</th>
+                <td>
+                  <div>.deb</div>
+                  <div>.rpm</div>
+                </td>
+                <td>
+                  <div>
+                    <a href=""><img src="./img/download_blue.svg" alt="" /></a>
+                  </div>
+                  <div>
+                    <a href=""><img src="./img/download_blue.svg" alt="" /></a>
+                  </div>
+                </td>
+                <td class="gray">
+                  <div>
+                    <a href=""><img src="./img/download_dark.svg" alt="" /></a>
+                  </div>
+                  <div>
+                    <a href=""><img src="./img/download_dark.svg" alt="" /></a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="table-download-row">
+                <td></td>
+                <td class="table-download"><a href=""> Other downloads</a></td>
+                <td></td>
+                <td class="no-bg"></td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- end of download table -->
+
+          <p class="other-platforms">
+            <a href="#">Other platforms </a>and <a href="#">Insiders Edition</a>
+          </p>
+          <p class="privacy">
+            By using VS Write, you agree to its
+            <a href="#"
+              >licence and privacy statement<span id="remain">.</span></a
+            >
+          </p>
+        </div>
+        <div class="showcase-img">
+          <img src="./img/vs-code-home.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end of showcase -->
+
+    <!-- offers -->
+
+    <div class="offer-container">
+      <div class="offers">
+        <a href="#IntelliSense">
+          <div class="offer-item offer-1">
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            <p>IntelliSense</p>
+          </div>
+        </a>
+        <a href="#Debugging">
+          <div class="offer-item offer-2">
+            <i class="fa fa-bug" aria-hidden="true"></i>
+            <p>Run and Debug</p>
+          </div>
+        </a>
+        <a href="#Git">
+          <div class="offer-item offer-3">
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <p>Built-in Git</p>
+          </div>
+        </a>
+        <a href="#Extensions">
+          <div class="offer-item offer-4">
+            <i class="fa fa-cubes" aria-hidden="true"></i>
+            <p>Extensions</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- end of offers -->
+
+    <!-- testimonials -->
+
+    <div class="testimonial-container">
+      <div class="testimonials owl-carousel owl-theme">
+
+
+        <div class="testimonial-contents">
+          <div class="testimonial-img">
+            <a href="https://twitter.com/Lehre_mi?s=08"
+              ><img src="./img/image-1.jpg" alt=""
+            /></a>
+          </div>
+          <div class="testimonial-texts">
+            <div class="testimonial-links">
+              <a href="https://twitter.com/Lehre_mi?s=08"
+                ><p><span class="bold-link-name"> //Lehre </span> @realLehre</p></a
+              >
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="testimonial-main-texts">
+              <p>VS Write does so many things right. I'm constantly impressed by the UX, and customizing workspace/ user preferences is no exception. &#128588&#128175 It just keeps getting better &#10084;&#65039</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="testimonial-contents">
+          <div class="testimonial-img">
+            <a href="https://twitter.com/Lehre_mi?s=08"
+              ><img src="./img/image-2.jpg" alt=""
+            /></a>
+          </div>
+          <div class="testimonial-texts">
+            <div class="testimonial-links">
+              <a href="https://twitter.com/Lehre_mi?s=08"
+                ><p><span class="bold-link-name">//Lehre</span> @realLehre</p></a
+              >
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="testimonial-main-texts">
+              <p>Awesome - VS Write will have deep remote development: you can connect to a container running a different OS and be able to use any VS Write plugins/linting/debugging for that environment. &#128293&#128293&#128293</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="testimonial-contents">
+          <div class="testimonial-img">
+            <a href="https://twitter.com/Lehre_mi?s=08"
+              ><img src="./img/image-3.jpg" alt=""
+            /></a>
+          </div>
+          <div class="testimonial-texts">
+            <div class="testimonial-links">
+              <a href="https://twitter.com/Lehre_mi?s=08"
+                ><p><span class="bold-link-name">//Lehre</span> @realLehre</p></a
+              >
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="testimonial-main-texts">
+              <p>VS Write is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="testimonial-contents">
+          <div class="testimonial-img">
+            <a href="https://twitter.com/Lehre_mi?s=08"
+              ><img src="./img/image-4.jpg" alt=""
+            /></a>
+          </div>
+          <div class="testimonial-texts">
+            <div class="testimonial-links">
+              <a href="https://twitter.com/Lehre_mi?s=08"
+                ><p><span class="bold-link-name">//Lehre</span> @realLehre</p></a
+              >
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="testimonial-main-texts">
+              <p>Just as I thought, VS Write couldn't get better, out comes its Remote Development plugins in the stable version that let you remote into containers as a dev environment! &#128525 </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="testimonial-contents">
+          <div class="testimonial-img">
+            <a href="https://twitter.com/Lehre_mi?s=08"
+              ><img src="./img/image-5.jpg" alt=""
+            /></a>
+          </div>
+          <div class="testimonial-texts">
+            <div class="testimonial-links">
+              <a href="https://twitter.com/Lehre_mi?s=08"
+                ><p><span class="bold-link-name">//Lehre</span> @realLehre</p></a
+              >
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="testimonial-main-texts">
+              <p>I was a vim fan, but then discovered VS Writes's Vim plugin, which lets me add in my Vim keybindings. I can maintain my coding style without having to compromise on speed.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="testimonial-contents">
+          <div class="testimonial-img">
+            <a href="https://twitter.com/Lehre_mi?s=08"
+              ><img src="./img/image-6.jpg" alt=""
+            /></a>
+          </div>
+          <div class="testimonial-texts">
+            <div class="testimonial-links">
+              <a href="https://twitter.com/Lehre_mi?s=08"
+                ><p><span class="bold-link-name">//Lehre</span> @realLehre</p></a
+              >
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="testimonial-main-texts">
+              <p>I love VS Write. The built-in markdown previewer is awesome and the plugin system allows me to use GitLens, which makes my workflow so much easier.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of testimonials -->
+
+    <!-- offer-contents -->
+
+    <div class="offer-content-container">
+      <div class="offer-content c-1" id="IntelliSense">
+        <div class="img-container animate-left">
+          <img src="./img/home-intellisense.svg" alt="" />
+        </div>
+        <div class="content-texts animate-right">
+          <h4>Meet IntelliSense.</h4>
+          <p>
+            Go beyond syntax highlighting and autocomplete with IntelliSence,
+            which provides smart completions based on variable types, function
+            defitions, and imported modules.
+          </p>
+        </div>
+      </div>
+
+      <div class="offer-content c-gray" id="Debugging">
+        <div class="img-container animate-right">
+          <img src="./img/home-debug.svg" alt="" />
+        </div>
+        <div class="content-texts animate-left">
+          <h4>Print Statement debugging is a thing of the past.</h4>
+          <p>
+            Debug code right from the editor. Launch or attach to your running
+            apps and debug with break points, call stacks, and an interactive
+            console.
+          </p>
+        </div>
+      </div>
+
+      <div class="offer-content c-3" id="Git">
+        <div class="img-container animate-left">
+          <img src="./img/home-git.svg" alt="" />
+        </div>
+        <div class="content-texts animate-right">
+          <h4>Git commands built-in.</h4>
+          <p>
+            Working with Git and other SCM providers has never been easier.
+            Review diffs, stage files and make commits right from the editor.
+            Push and pull from any hosted SCM service.
+          </p>
+        </div>
+      </div>
+
+      <div class="offer-content c-gray gray-2" id="Extensions">
+        <div class="img-container animate-right">
+          <a href=""><img src="./img/Hundreds-of-Extensions.png" alt="" /> </a>
+        </div>
+        <div class="content-texts animate-left">
+          <h4>Extensible and customizable.</h4>
+          <p>
+            Want even more features? Install extensions to add new languages,
+            themes, debuggers, and to connect to additional services. Extensions
+            run in separate processes, ensuring the won't slow down your editor.
+            <a href="">Learn more about extensions.</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="offer-content c-5" id="Deploy">
+        <div class="img-container animate-left">
+          <img src="./img/home-azure.svg" alt="" />
+        </div>
+        <div class="content-texts animate-right">
+          <h4>Deploy with confidence and ease.</h4>
+          <p>
+            With <a href="#">Microsoft Azure</a> you can deploy and host your
+            React, Angular, Vue, Node, Python (and more!) sites, store and query
+            relational document based data, and scale with serverless computing,
+            all with ease, <a href="#">all from VS Write.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of offer-contents -->
+
+    <!-- languages -->
+
+    <div class="languages-container">
+      <div class="languages-content">
+        <div class="languages">
+          <div class="languages-content-main">
+            <p>VS Write for</p>
+            <div class="language-list-container">
+              <ul class="language-list">
+                <li>Visual Basic</li>
+                <li>XML</li>
+                <li>PHP</li>
+                <li>Makefile</li>
+                <li>HTML</li>
+                <li>Clojure</li>
+                <li>Typescript</li>
+                <li>R</li>
+                <li>Ruby</li>
+                <li>JSON</li>
+                <li>Python</li>
+                <li>Less</li>
+                <li>Coffee Script</li>
+                <li>F#</li>
+                <li>Batch</li>
+                <li>Dockerfile</li>
+                <li>Haxe</li>
+                <li>Go</li>
+                <li>SQL</li>
+                <li>Markdown</li>
+                <li>Java</li>
+                <li>CSS</li>
+                <li>Objective-C</li>
+                <li>Rust</li>
+                <li>Razor</li>
+                <li>Jade</li>
+                <li>Lua</li>
+                <li>C++</li>
+                <li>Perl</li>
+                <li>C#</li>
+                <li>Power Shell</li>
+                <li>HandleBars</li>
+                <li>Swift</li>
+                <li>Groovy</li>
+                <li>Javascript</li>
+                <li>Ini</li>
+                <li>Sass</li>
+              </ul>
+            </div>
+          </div>
+          <div class="get-started"><a href="#">Get Started Now</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of languages -->
+
+    <!-- install -->
+    <div class="install-big-container">
+      <div class="install">
+        <div class="install-container">
+          <div class="install-content animate-left">
+            <div class="install-logo windows ">
+              <img src="./img/windows.png" alt="" />
+            </div>
+            <a href="#">
+              <div class="install-btn-lg">
+                <div>
+                  <div class="btn-lg-top">
+                    <img src="./img/download.svg" alt="" />
+                    <p>Windows</p>
+                  </div>
+                  <div class="btn-lg-bottom">
+                    <p>Windows 7, 8, 10</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="install-tables">
+              <table>
+                <tr>
+                  <td>User Installer</td>
+                  <td class="btn-small-container">
+                    <div class="btn-small">
+                      <a href="#">64 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">32 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">ARM</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>System Installer</td>
+                  <td class="btn-small-container">
+                    <div class="btn-small">
+                      <a href="#">64 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">32 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">ARM</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.zip</td>
+                  <td class="btn-small-container">
+                    <div class="btn-small">
+                      <a href="#">64 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">32 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">ARM</a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="install-content animate-bottom">
+            <div class="install-logo">
+              <img src="./img/linux.png" alt="" />
+            </div>
+            <a href="#">
+              <div class="install-btn-lg btn-lg-x">
+                <div class="install-btn-lg-1">
+                  <div>
+                    <div class="btn-lg-top">
+                      <img src="./img/download.svg" alt="" />
+                      <p>.deb</p>
+                    </div>
+                    <div class="btn-lg-bottom">
+                      <p>Debian, Ubuntu</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="install-btn-lg-2">
+                  <a href="#"
+                    ><div>
+                      <div class="btn-lg-top">
+                        <img src="./img/download.svg" alt="" />
+                        <p>.rpm</p>
+                      </div>
+                      <div class="btn-lg-bottom">
+                        <p>Red Hat, Fedora, SUSE</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <div class="install-tables">
+              <table>
+                <tr>
+                  <td>.deb</td>
+                  <td class="btn-small-container">
+                    <div class="btn-small">
+                      <a href="#">64 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">32 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">ARM</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.rpm</td>
+                  <td class="btn-small-container">
+                    <div class="btn-small">
+                      <a href="#">64 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">32 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">ARM</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>.tar.gz</td>
+                  <td class="btn-small-container">
+                    <div class="btn-small">
+                      <a href="#">64 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">32 bit</a>
+                    </div>
+                    <div class="btn-small">
+                      <a href="#">ARM</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <div class="btn-small small-x">
+                      <a href="#">Snap Store</a>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="install-content animate-right">
+            <div class="install-logo">
+              <img src="./img/mac.png" alt="" />
+            </div>
+            <a href="#">
+              <div class="install-btn-lg">
+                <div>
+                  <div class="btn-lg-top">
+                    <img src="./img/download.svg" alt="" />
+                    <p>Mac</p>
+                  </div>
+                  <div class="btn-lg-bottom">
+                    <p>macOS 10.10+</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of install -->
+
+    <!-- text-area -->
+
+    <div class="text-area">
+      <div class="text-area-heading">
+        <h5>Want new features sooner?</h5>
+        <p>Get the <a href="#">Insiders build</a> instead.</p>
+      </div>
+
+      <div class="text-area-section-2">
+        <h5>license and privacy terms</h5>
+        <p>
+          By downloading and using Visual Studio Write, you agree to the
+          <a href="#">license terms</a> and
+          <a href="#">privacy statement.</a> VS Write automatically sends
+          telemetry data and crash dumps to help us improve the product. If you
+          would prefer not to have this data sent please go see
+          <a href="#">How to Disable Crash Reporting</a> to learn how to disable
+          it.
+        </p>
+      </div>
+    </div>
+
+    <!-- end of text-area -->
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p class="hello">Hello from Lehre.</p>
+          <p>
+            <a href="https://twitter.com/realLehre?s=08" target="_blank"
+              >Follow @realLehre</a
+            >
+          </p>
+          <div class="github">
+            <div>
+              <a href="github.com/KrtvOLD"><i class="fa fa-github"></i> Star</a>
+            </div>
+            <div class="github-numbers">
+              <a href="">107,963</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">License</a></li>
+          </ul>
+          <div class="footer-logo">
+            <a href=""><img src="./img/microsoft-logo.png" alt="" /></a>
+            <p>&copy; 2021 Microsoft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of footer -->
+
+    <script src="app.js"></script>
+  
+  </body>
+</html>
