@@ -341,8 +341,6 @@ body {
   font-weight: 300;
 }
 
-.download-table-content .table-download {
-}
 .download-table-content .table-download a {
   color: var(--mainColor);
   text-align: center;
@@ -407,7 +405,7 @@ body {
 .showcase-img img {
   width: 100%;
 }
-/* @keyframes fromRight {
+@keyframes fromRight {
   0% {
     transform: translateX(-100%);
   }
@@ -422,7 +420,7 @@ body {
   100% {
     transform: translateX(0);
   }
-} */
+}
 
 /* end of showcase */
 
