@@ -676,6 +676,7 @@ body {
 
 .language-list li {
   font-size: 3rem;
+  color: var(--textarea);
 }
 .languages-content-main li:not(:last-child) {
   margin-bottom: 3px;
