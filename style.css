@@ -478,6 +478,10 @@ body {
   position: relative;
 }
 
+.testimonials {
+  max-width: 1440px;
+}
+
 .testimonial-contents {
   display: flex;
   width: 85%;
@@ -576,6 +580,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 70px 70px;
+  max-width: 1440px;
 }
 
 .content-texts {
@@ -622,6 +627,10 @@ body {
   background: var(--darkerWhite);
   padding: 70px 0;
   text-align: center;
+}
+
+.languages {
+  max-width: 1440px;
 }
 
 .languages-content-main {
@@ -789,6 +798,7 @@ body {
 
 .install {
   width: 75%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
