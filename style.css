@@ -361,8 +361,8 @@ body {
   white-space: nowrap;
   color: var(--lightergraytextcolor);
   background: var(--alertColor);
-  padding: 5px 50px;
-  border-radius: 5px;
+  padding: 10px 50px;
+  border-radius: 10px;
   margin: 10px 0;
   position: relative;
   z-index: 1;
@@ -371,8 +371,8 @@ body {
 .showcase-texts .other-platforms:before {
   content: "";
   position: absolute;
-  border: 12px solid transparent;
-  border-bottom: 15px solid var(--alertColor);
+  border: 16px solid transparent;
+  border-bottom: 20px solid var(--alertColor);
   top: -25px;
   right: 20px;
 }
