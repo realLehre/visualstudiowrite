@@ -1,3 +1,5 @@
+## Link to deployed website [here.](https://visualstudiowrite.netlify.app/) 
+
 # visualstudiowrite
 Looking to practice and get more projects done, so I took a look at VS Code's landing page and decided to give it a trial. I replicated all major sections to the best of my skills and I'm looking to learn more.
 Changed the main color (blue) to green to avoid piracy.
